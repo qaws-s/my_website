@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  background-color: aqua;
+}
+
+main {
+  scroll-behavior: smooth;
+}
+
+section {
+  position: relative;
+  min-height: 100vh;
+  padding: 100px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 1;
+  overflow: hidden;
+}
+
+strong {
+  color: #6f757e; 
+  font-weight: bold; 
+}
+
+section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-size: cover;
+  background-position: center;
+  filter: blur(10px) brightness(0.6);
+  transform: scale(1.05);
+  z-index: -2;
+}
+
+section::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.4);
+  z-index: -1;
+}
+
+#about::before {
+  background-image: url('images/about.jpg');
+}
+
+#mechanical-engineering::before {
+  background-image: url('images/mechanical.jpg');
+}
+
+#computer-science::before {
+  background-image: url('images/compsci.jpg');
+}
+
+#cybersecurity::before {
+  background-image: url('images/cyber.jpg');
+}
+
+#boxing::before {
+  background-image: url('images/boxing.jpg');
+}
+
+#about{
+  background:linear-gradient(135deg, #000, rgb(40, 64, 217), #8fa3ca);
+}
+
+#mechanical-engineering{
+  background:linear-gradient(225deg, #8fa3ca, rgb(122, 148, 169), #202227);
+}
+
+#computer-science{
+  background:linear-gradient(225deg, #8fa3ca, rgb(122, 148, 169), #202227);
+}
+
+h1, h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+p {
+  max-width: 800px;
+  font-size: 1.2rem;
+  line-height: 1.7;
+}
+
+.section-box {
+  position: absolute;
+  top: 60px;
+  left: 60px;
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+section {
+  position: relative;
+  min-height: 100vh;
+}
+
+footer {
+  background-color: #3dd3e0;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem 0;
+}
+
+.socials a {
+  color: #eee;
+  text-decoration: none;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.socials a:hover {
+  color: #000;
+}
+
+.socials i {
+  font-size: 1.3rem;
+}
