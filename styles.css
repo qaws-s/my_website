@@ -20,11 +20,6 @@ section {
   overflow: hidden;
 }
 
-strong {
-  color: #6f757e; 
-  font-weight: bold; 
-}
-
 section::before {
   content: "";
   position: absolute;
@@ -44,12 +39,39 @@ section::after {
   z-index: -1;
 }
 
+#about{
+  background:linear-gradient(135deg, #151515, rgb(40, 64, 217), #8fa3ca);
+}
+
+#mechanical-engineering{
+  background:linear-gradient(225deg, #8fa3ca, rgb(122, 148, 169), #202227);
+}
+
+#computer-science{
+  background:linear-gradient(135deg, #aed2ed, #00bfff, #1e1e2f);
+}
+
+#cybersecurity{
+  background:linear-gradient(225deg, #259035, rgb(40, 68, 61), #191a1e);
+}
+
+#boxing{
+  background:linear-gradient(135deg, #d7a0a0, #c60b0b, #151212)
+}
+
+footer {
+  background:linear-gradient(180deg, #1e1e2f, #0f0f0f);
+  padding: 20px 0;
+  text-align: center;
+  border-top: 2px solid #00ffff;
+}
+
 #about::before {
   background-image: url('images/about.jpg');
 }
 
 #mechanical-engineering::before {
-  background-image: url('images/mechanical.jpg');
+  background-image: url('https://www.discoverengineering.org/wp-content/uploads/2023/12/mj_11226_4.jpg');
 }
 
 #computer-science::before {
@@ -64,16 +86,29 @@ section::after {
   background-image: url('images/boxing.jpg');
 }
 
-#about{
-  background:linear-gradient(135deg, #000, rgb(40, 64, 217), #8fa3ca);
+#about strong {
+  color: #576eee; 
+  font-weight: bold; 
 }
 
-#mechanical-engineering{
-  background:linear-gradient(225deg, #8fa3ca, rgb(122, 148, 169), #202227);
+#mechanical-engineering strong {
+  color: #292929; 
+  font-weight: bold; 
 }
 
-#computer-science{
-  background:linear-gradient(225deg, #8fa3ca, rgb(122, 148, 169), #202227);
+#computer-science strong {
+  color: #85d8ff; 
+  font-weight: bold; 
+}
+
+#cybersecurity strong {
+  color: #7eff15; 
+  font-weight: bold; 
+}
+
+#boxing strong {
+  color: #ff0000; 
+  font-weight: bold; 
 }
 
 h1, h2 {
@@ -101,15 +136,27 @@ p {
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
+.small-box {
+  position: absolute;
+  width: 500px; 
+  height: 300px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 12px;
+  padding: 0.8rem;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.9rem;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  z-index: 0;
+  position: absolute;
+}
+
+
 section {
   position: relative;
   min-height: 100vh;
-}
-
-footer {
-  background-color: #3dd3e0;
-  padding: 20px 0;
-  text-align: center;
 }
 
 .socials {
